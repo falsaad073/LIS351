@@ -1,0 +1,189 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #fff;
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
+
+/* HEADER */
+.site-header {
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.brand .dot {
+  color: #3a88a8;
+}
+
+/* HERO */
+.hero {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("images/bo3zombies.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 420px;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 100px 0;
+  color: #fff;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-family: 'Alfa Slab One', cursive;
+}
+
+.hero-subhead {
+  font-size: 22px;
+  color: #ddd;
+  margin: 12px 0 30px;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 5px;
+}
+
+.btn-dark {
+  background: #111;
+  color: #fff;
+  border: 2px solid #111;
+}
+
+.btn-outline {
+  border: 2px solid #3a88a8;
+  color: #3a88a8;
+  background: transparent;
+}
+
+/* FEATURES */
+.features {
+  padding: 50px 0;
+}
+
+.features-grid {
+  display: flex;
+  gap: 30px;
+}
+
+.feature {
+  flex: 1;
+  text-align: center;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 15px;
+  font-size: 22px;
+}
+
+/* SECONDARY */
+.secondary {
+  padding: 40px 0;
+}
+
+.secondary-grid {
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  flex: 1;
+  border: 1px solid #eee;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-text {
+  padding: 20px;
+}
+
+.card-text h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.card-text p {
+  color: #666;
+  font-size: 14px;
+}
+
+.card-image {
+  background-size: cover;
+  background-position: center;
+}
+
+/* CTA */
+.cta {
+  background: #f7f7f7;
+  padding: 50px 0;
+}
+
+.cta-inner {
+  text-align: center;
+}
+
+/* FOOTER */
+.site-footer {
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  padding: 30px 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.footer-left {
+  font-size: 13px;
+  color: #666;
+}
+
+.footer-left a {
+  color: #3a88a8;
+}
+
+.footer-cols {
+  display: flex;
+  gap: 28px;
+}
