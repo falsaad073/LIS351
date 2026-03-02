@@ -1,11 +1,17 @@
+/* ========================= */
 /* RESET */
+/* ========================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ========================= */
 /* BODY */
+/* ========================= */
+
 body {
   font-family: 'Merriweather', serif;
   background-color: #f5f5f5;
@@ -13,7 +19,10 @@ body {
   line-height: 1.6;
 }
 
+/* ========================= */
 /* CONTAINER */
+/* ========================= */
+
 .container {
   width: 90%;
   max-width: 1100px;
@@ -59,13 +68,17 @@ body {
 }
 
 /* ========================= */
-/* HERO SECTION */
+/* HERO */
 /* ========================= */
 
 .hero {
   height: 520px;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url("bo3zombies.jpg") center/cover no-repeat;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("bo3zombies.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   text-align: center;
@@ -84,7 +97,10 @@ body {
   margin-bottom: 30px;
 }
 
+/* ========================= */
 /* BUTTONS */
+/* ========================= */
+
 .btn {
   padding: 12px 25px;
   text-decoration: none;
@@ -114,7 +130,7 @@ body {
 }
 
 /* ========================= */
-/* FEATURES SECTION */
+/* FEATURES */
 /* ========================= */
 
 .features {
@@ -151,7 +167,7 @@ body {
 }
 
 /* ========================= */
-/* CARDS SECTION */
+/* CARDS (SIDE-BY-SIDE FIXED) */
 /* ========================= */
 
 .cards {
@@ -162,12 +178,13 @@ body {
 .card-grid {
   display: flex;
   gap: 40px;
+  justify-content: space-between;
 }
 
 .card {
   background: white;
   display: flex;
-  flex: 1;
+  flex: 0 0 48%;   /* Forces two cards per row */
   border: 1px solid #ddd;
 }
 
@@ -188,7 +205,7 @@ body {
 }
 
 /* ========================= */
-/* CTA SECTION */
+/* CTA */
 /* ========================= */
 
 .cta {
